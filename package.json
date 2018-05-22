@@ -15,7 +15,8 @@
     "start:server": "node dist/server/index.js",
     "build:app": "ng build --prod",
     "build:server": "tsc -p src/tsconfig.server.json",
-    "build:all": "npm run build:app && npm run build:server"
+    "build:all": "npm run build:app && npm run build:server",
+    "postinstall": "npm run build:all"
   },
   "private": true,
   "dependencies": {
